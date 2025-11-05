@@ -12,7 +12,7 @@ Instead of just "keyword matching," it uses the Google Gemini API to perform a d
 
 Because the backend is deployed live on Render, you can install and use this extension in 60 seconds.
 
-1.  **Download:** Download the `extension.zip` file from this repository's [Releases page](https://github.com/your-username/your-repo/releases).
+1.  **Download:** Download the `extension.zip` file from this repository's [Releases page](https://github.com/jayesh70599/JobFit-AI/releases/tag/v1.0.0).
 2.  **Unzip:** Unzip the file. You will have a folder named `job-matcher-extension`.
 3.  **Go to Extensions:** In Chrome, type `chrome://extensions` in your address bar and press Enter.
 4.  **Enable Developer Mode:** In the top-right corner, turn on the **"Developer mode"** toggle.
