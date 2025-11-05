@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Job Analysis Results</title>
+  <link rel="stylesheet" href="results.css">
+</head>
+<body class="results-body">
+  <header class="results-header">
+    <div class="container">
+      <h1>Your AI Job Analysis</h1>
+    </div>
+  </header>
+
+  <main class="container">
+    <article class="card score-card">
+      <div id="match-score" class="score-circle">--%</div>
+      <p id="score-reasoning">Analyzing...</p>
+    </article>
+
+    <article class="card">
+      <h2>🔑 Missing Keywords</h2>
+      <p class="subtitle">Critical skills from the job description that are not on your resume.</p>
+      <div id="keywords-container"></div>
+    </article>
+
+    <article class="card">
+      <h2>✅ Strengths</h2>
+      <ul id="strengths-list"></ul>
+    </article>
+
+    <article class="card">
+      <h2>⚠️ Weaknesses</h2>
+      <ul id="weaknesses-list"></ul>
+    </article>
+
+    <article class="card">
+      <h2>💡 Actionable Tips</h2>
+      <ul id="tips-list"></ul>
+    </article>
+  </main>
+
+  <script src="results.js"></script>
+
+</body>
+</html>

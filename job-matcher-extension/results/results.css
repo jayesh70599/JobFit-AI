@@ -1,0 +1,135 @@
+/* results/results.css */
+
+:root {
+  --primary: #4A69E2;
+  --success: #28a745;
+  --warning: #ffc107;
+  --danger: #e63946;
+  --gray-100: #f8f9fa;
+  --gray-200: #e9ecef;
+  --text-dark: #212529;
+  --card-bg: #ffffff;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  --radius: 8px;
+  --border-color: #dee2e6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body.results-body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--gray-100);
+  color: var(--text-dark);
+  margin: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.results-header {
+  background-color: var(--card-bg);
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 30px;
+}
+
+.results-header h1 {
+  font-size: 1.75em;
+  font-weight: 700;
+  margin: 0;
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border-color);
+  margin-bottom: 24px;
+  padding: 24px 30px;
+}
+
+.card h2 {
+  font-size: 1.25em;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+/* Scorecard */
+.score-card {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.score-circle {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: var(--primary);
+  min-width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 7px solid var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s, border-color 0.3s;
+}
+
+.score-card p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  text-align: left;
+  margin: 0;
+}
+
+/* Lists */
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+li::before {
+  position: absolute;
+  left: 0;
+  top: 4px;
+  font-size: 18px;
+}
+#strengths-list li::before { content: '✅'; }
+#weaknesses-list li::before { content: '⚠️'; }
+#tips-list li::before { content: '💡'; }
+
+/* Keywords */
+.subtitle {
+  margin-top: -15px;
+  font-size: 14px;
+  color: #555;
+}
+#keywords-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+.keyword-pill {
+  background-color: var(--gray-100);
+  color: var(--text-dark);
+  padding: 6px 14px;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid var(--border-color);
+}

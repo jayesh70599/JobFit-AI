@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Semantic Job Matcher",
+  "version": "0.1.0",
+  "description": "Analyzes job descriptions against your resume using AI.",
+
+  "permissions": [
+    "storage",      
+    "activeTab",    
+    "scripting"     
+  ],
+
+  "host_permissions": [
+    "http://localhost:5000/*", 
+    "https://*.my-production-api.com/*" 
+  ],
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "action": {
+    "default_popup": "popup/popup.html"
+  }
+}
